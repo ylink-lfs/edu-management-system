@@ -12,7 +12,7 @@ void generate_schema()
 {
 	//The default executing dir is complicated. So using absolute path here
 	//std::fstream f("schema/table-schemas.sql", std::ios_base::in);
-	std::fstream f("/Users/*/edu-management/schema/user-table-schema.sql", std::ios_base::in);
+	std::fstream f("/Users/bytedance/edu-management/schema/user-table-schema.sql", std::ios_base::in);
 	if(!f.is_open())
 	{
 		qDebug() << "Open schema file failed";
@@ -44,7 +44,7 @@ void generate_login_user_data()
 	}
 	const int pair_user_num = 10;
 
-	std::fstream f("/Users/*/edu-management/login-user-info.txt", std::ios_base::out | std::ios_base::trunc);
+	std::fstream f("/Users/bytedance/edu-management/login-user-info.txt", std::ios_base::out | std::ios_base::trunc);
 	f << std::boolalpha;
 	f << "user_id\tpwd\tis_teacher\n";
 
